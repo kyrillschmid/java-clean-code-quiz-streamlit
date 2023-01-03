@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
 import session_state
-from streamlit.ScriptRunner import RerunException
-from streamlit.ScriptRequestQueue import RerunData
+#from streamlit.ScriptRunner import RerunException
+#from streamlit.ScriptRequestQueue import RerunData
 
 state = session_state.get(question_number=0)
 
@@ -28,4 +28,4 @@ if a != "Please select an answer":
             
 if st.button('Next question'):
     state.question_number += 1
-    raise RerunException(RerunData(widget_state=None))
+    #raise RerunException(RerunData(widget_state=None))
