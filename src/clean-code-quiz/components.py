@@ -1,19 +1,19 @@
 import streamlit as st
 
 
-def get_quiz_question(placeholder, key, questions):
+def get_quiz_question(question, answers):
 
-    with placeholder.form(f"my_form_{key}"):
+    with st.form(f"my_form_{question}"):
     
-        placeholder.write('**What is Clean Code?**')
+        st.write(f'**{question}**')
         checkbox_vals = []
 
-        for key, value in questions.items():
-            checkbox_vals.append(placeholder.checkbox(value))
+        for answer in answers:
+            checkbox_vals.append(st.checkbox(answer))
         
         # Every form must have a submit button.
-        submitted = placeholder.form_submit_button("Submit")
+        submitted = st.form_submit_button("Submit")
 
     if submitted:
         for i, answer in enumerate(checkbox_vals):
-            placeholder.write(f"Question: {i} - Answer: {answer}")
+            st.write(f"Question: {i} - Answer: {answer}")
