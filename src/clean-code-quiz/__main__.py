@@ -3,23 +3,18 @@ import pandas as pd
 
 def main():
 
-    with st.sidebar:
-        add_radio = st.radio(
-            "Choose a shipping method",
-            ("Standard (5-15 days)", "Express (2-5 days)")
-        )
-
-
-
     with st.form("my_form"):
-        st.write("Inside the form")
-        slider_val = st.slider("Form slider")
-        checkbox_val = st.checkbox("Form checkbox")
+        
+        st.write('What is Clean Code?')
+
+        checkbox_val_1 = st.checkbox("Elegant and efficient")
+        checkbox_val_2 = st.checkbox("Written by someone who cares")
+        checkbox_val_3 = st.checkbox("Well written prose")
 
         # Every form must have a submit button.
         submitted = st.form_submit_button("Submit")
         if submitted:
-            st.write("slider", slider_val, "checkbox", checkbox_val)
+            st.write("checkbox_val_1", checkbox_val_1, "checkbox_val_2", checkbox_val_2)
 
 st.write("Outside the form")
 
