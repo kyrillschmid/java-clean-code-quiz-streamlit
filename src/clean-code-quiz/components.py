@@ -1,9 +1,9 @@
 import streamlit as st
 
 
-def get_quiz_question(questions):
+def get_quiz_question(key, questions):
 
-    with st.form("my_form"):
+    with st.form(f"my_form_{key}"):
     
         st.write('**What is Clean Code?**')
         checkbox_vals = []
