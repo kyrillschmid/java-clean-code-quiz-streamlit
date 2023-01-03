@@ -1,31 +1,33 @@
 import streamlit as st
-import numpy as np
-import session_state
-#from streamlit.ScriptRunner import RerunException
-#from streamlit.ScriptRequestQueue import RerunData
 
-state = session_state.get(question_number=0)
+if "page" not in st.session_state:
+    st.session_state.page = 0
 
-@st.cache
-def get_question(question_number):
-    arr = np.random.randint(0, 100, 2)
-    q = f"{arr[0]} * {arr[1]}"
-    ans = arr[0]*arr[1]
-    choices = ["Please select an answer", ans, ans-1, ans+1, ans+2]
-    return arr, q, ans, choices
+def nextpage(): st.session_state.page += 1
+def restart(): st.session_state.page = 0
 
-arr, q, ans, choices = get_question(state.question_number)
+placeholder = st.empty()
+st.button("Next",on_click=nextpage,disabled=(st.session_state.page > 3))
 
-st.text(f"Solve: {q}")
-a = st.selectbox('Answer:', choices)
+if st.session_state.page == 0:
+    # Replace the placeholder with some text:
+    placeholder.text(f"Hello, this is page {st.session_state.page}")
 
-if a != "Please select an answer":
-    st.write(f"You chose {a}")
-    if (ans == a):
-        st.write("Correct!")
-    else:
-        st.write(f"Wrong!, the correct answer is {ans}")
-            
-if st.button('Next question'):
-    state.question_number += 1
-    #raise RerunException(RerunData(widget_state=None))
+elif st.session_state.page == 1:
+    # Replace the text with a chart:
+    placeholder.line_chart({"data": [1, 5, 2, 6]})
+
+elif st.session_state.page == 2:
+# Replace the chart with several elements:
+    with placeholder.container():
+        st.write("This is one element")
+        st.write("This is another")
+        st.metric("Page:", value=st.session_state.page)
+
+elif st.session_state.page == 3:
+    placeholder.markdown(r"$f(x) = \exp{\left(x^🐈\right)}$")
+
+else:
+    with placeholder:
+        st.write("This is the end")
+        st.button("Restart",on_click=restart)
