@@ -17,11 +17,9 @@ def main():
             st.write("checkbox_val_1", checkbox_val_1, "checkbox_val_2", checkbox_val_2)
 
 
-    if st.button('Say hello'):
-        st.write('Why hello there')
-    else:
-        st.write('Goodbye')
-
+    if st.button('Next'):
+        st.write('Go to next question')
+    
 
 if __name__ == "__main__":
     main()
