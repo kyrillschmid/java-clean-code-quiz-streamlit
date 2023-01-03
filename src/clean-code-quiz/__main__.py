@@ -10,7 +10,7 @@ questions = {
 
 def main():
 
-    get_quiz_question()
+    get_quiz_question(questions)
 
     if st.button('Next'):
         st.write('Go to next question')
