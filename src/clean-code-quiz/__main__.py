@@ -19,7 +19,7 @@ def main():
 
     current_quiz = 0
     
-    get_quiz_question(quizzes[current_quiz])
+    get_quiz_question(current_quiz, quizzes[current_quiz])
 
     if st.button('Next'):
         current_quiz += 1
