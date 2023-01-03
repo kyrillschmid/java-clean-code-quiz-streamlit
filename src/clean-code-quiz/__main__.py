@@ -5,7 +5,7 @@ def main():
 
     with st.form("my_form"):
         
-        st.write('What is Clean Code?')
+        st.write('**What is Clean Code?**')
 
         checkbox_val_1 = st.checkbox("Elegant and efficient")
         checkbox_val_2 = st.checkbox("Written by someone who cares")
@@ -16,7 +16,6 @@ def main():
         if submitted:
             st.write("checkbox_val_1", checkbox_val_1, "checkbox_val_2", checkbox_val_2)
 
-st.write("Outside the form")
 
 if __name__ == "__main__":
     main()
