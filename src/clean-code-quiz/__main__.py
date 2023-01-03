@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 
 def main():
+
+    with st.sidebar:
+        add_radio = st.radio(
+            "Choose a shipping method",
+            ("Standard (5-15 days)", "Express (2-5 days)")
+        )
+
+
+
     with st.form("my_form"):
         st.write("Inside the form")
         slider_val = st.slider("Form slider")
