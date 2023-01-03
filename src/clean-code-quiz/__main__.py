@@ -7,8 +7,6 @@ def main():
         
         st.write('**What is Clean Code?**')
 
-    
-
         checkbox_val_1 = st.checkbox("Elegant and efficient")
         checkbox_val_2 = st.checkbox("Written by someone who cares")
         checkbox_val_3 = st.checkbox("Well written prose")
@@ -17,6 +15,12 @@ def main():
         submitted = st.form_submit_button("Submit")
         if submitted:
             st.write("checkbox_val_1", checkbox_val_1, "checkbox_val_2", checkbox_val_2)
+
+
+    if st.button('Say hello'):
+        st.write('Why hello there')
+    else:
+        st.write('Goodbye')
 
 
 if __name__ == "__main__":
