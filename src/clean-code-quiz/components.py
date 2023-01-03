@@ -9,7 +9,7 @@ def get_quiz_question(placeholder, key, questions):
         checkbox_vals = []
 
         for key, value in questions.items():
-            checkbox_vals.append(st.checkbox(value))
+            checkbox_vals.append(placeholder.checkbox(value))
         
         # Every form must have a submit button.
         submitted = placeholder.form_submit_button("Submit")
