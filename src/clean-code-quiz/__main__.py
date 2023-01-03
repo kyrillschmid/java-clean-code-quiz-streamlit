@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 from components import get_quiz_question
 
+questions = {
+    "q1" : "Elegant and efficient",
+    "q2" : "Written by someone who cares",
+    "q3" : "Well written prose"}
+
+
 def main():
 
     get_quiz_question()
