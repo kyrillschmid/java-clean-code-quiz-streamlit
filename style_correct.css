@@ -1,0 +1,20 @@
+
+span.st-d0,span.st-cy,span.st-cx,span.st-cw,span.st-cv  {
+    background-color: rgb(9, 171, 59);
+    border-bottom-color: rgb(9, 171, 59);
+    border-top-color: rgb(9, 171, 59);
+    border-right-color: rgb(9, 171, 59);
+    border-left-color: rgb(9, 171, 59);
+}
+
+div.css-12ttj6m.epcbefy1 {
+    border-color: rgb(9, 171, 59);
+}
+
+div[data-testid="column"]:nth-of-type(1){
+    text-align: end;
+} 
+
+div[data-testid="column"]:nth-of-type(2){
+    text-align: start;
+} 

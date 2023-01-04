@@ -1,0 +1,20 @@
+{
+    "quiz" : [
+        {
+            "question" : "What is clean code?",
+            "options" : ["Elegant and efficient", "Written by someone who cares", "Reads like well written prose", "Simple and direct"],
+            "answers" : [true, true, true, true]
+        }, 
+        {
+            "question" : "What are symptons of code Rot?",
+            "options" : ["Rigidity", "Fragility", "Inseperability", "Opacity"],
+            "answers" : [true, true, true, true]
+        },
+        {   
+            "code" : "public void doSomething(name): \n System.out.println(\"Hello\" + name);",
+            "question" : "What is the problem with the name of this method?",
+            "options" : ["Non-intention revealing", "Too long", "Camel case"],
+            "answers" : [true, false, false]
+        }
+    ]
+}
