@@ -1,0 +1,84 @@
+{
+    "quiz": [
+        {
+            "question": "What is the purpose of the ReplayBuffer in DQN?",
+            "options": [
+                "To store recent transitions",
+                "To compute the loss function",
+                "To update the Q-network weights",
+                "To sample mini-batches for training"
+            ],
+            "answers": [true, false, false, true]
+        },
+        {
+            "question": "Which activation function is used in the Qnet class?",
+            "options": [
+                "ReLU",
+                "Sigmoid",
+                "Tanh",
+                "Softmax"
+            ],
+            "answers": [true, false, false, false]
+        },
+        {
+            "question": "What is the role of the epsilon parameter in the DQN implementation?",
+            "options": [
+                "To adjust the learning rate",
+                "To balance exploration and exploitation",
+                "To initialize the Q-network weights",
+                "To determine the batch size for training"
+            ],
+            "answers": [false, true, false, false]
+        },
+        {
+            "question": "What does the 'gamma' hyperparameter represent?",
+            "options": [
+                "Learning rate",
+                "Discount factor for future rewards",
+                "Initial epsilon value for exploration",
+                "Capacity of the ReplayBuffer"
+            ],
+            "answers": [false, true, false, false]
+        },
+        {
+            "question": "How is the target for the Q-learning update calculated?",
+            "options": [
+                "Current reward plus discounted maximum future Q value",
+                "Sum of rewards for the entire episode",
+                "Maximum Q value of the next state",
+                "Difference between Q values of current and next state"
+            ],
+            "answers": [true, false, false, false]
+        },
+        {
+            "question": "When is the Q-target network's weights updated with the Q-network's weights?",
+            "options": [
+                "After every episode",
+                "After a fixed number of episodes",
+                "After every training step",
+                "Never, they are kept constant"
+            ],
+            "answers": [false, true, false, false]
+        },
+        {
+            "question": "What does the loss function used in training the DQN aim to minimize?",
+            "options": [
+                "The difference between predicted Q values and actual rewards",
+                "The sum of all rewards",
+                "The error between the target Q value and the predicted Q value",
+                "The variance of the Q values"
+            ],
+            "answers": [false, false, true, false]
+        },
+        {
+            "question": "What is the effect of linearly annealing epsilon?",
+            "options": [
+                "It decreases exploration over time",
+                "It increases the learning rate over time",
+                "It stabilizes the Q-values earlier in training",
+                "It increases the discount factor over time"
+            ],
+            "answers": [true, false, false, false]
+        }
+    ]
+}

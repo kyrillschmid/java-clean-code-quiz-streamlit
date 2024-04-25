@@ -11,8 +11,8 @@
             "answers" : [true, true, true, true]
         },
         {   
-            "code" : "public void doSomething(name): \n System.out.println(\"Hello\" + name);",
-            "question" : "What is the problem with the name of this method?",
+            "question" : "What is the problem with the name of this method?",    
+            "code" : "public void doSomething(name): \n     System.out.println(\"Hello\" + name);",
             "options" : ["Non-intention revealing", "Too long", "Camel case"],
             "answers" : [true, false, false]
         }

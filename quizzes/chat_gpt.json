@@ -1,0 +1,92 @@
+{
+    "quiz": [
+        {
+            "question": "What is the first step in the process when you ask ChatGPT a question?",
+            "options": [
+                "Sampling a prediction",
+                "Tokenization of the input",
+                "Embeddings creation",
+                "Multiply embeddings by model weights"
+            ],
+            "answers": [false, true, false, false],
+            "explanation": "The first step when interacting with ChatGPT involves tokenizing the input text. This process converts the input text into tokens, which are smaller units of text, often corresponding to words or subwords. Tokenization is essential as it prepares the text for processing in a way that the model can understand and operate on effectively."
+        },
+        {
+            "question": "What does tokenization involve in the context of ChatGPT?",
+            "options": [
+                "Converting text to speech",
+                "Splitting text into paragraphs",
+                "Breaking text into tokens, which can be parts of words",
+                "Encrypting the input text"
+            ],
+            "answers": [false, false, true, false],
+            "explanation": "In the context of ChatGPT, tokenization specifically involves breaking down the input text into tokens. Tokens can be parts of words, whole words, or occasionally multiple words grouped together. This is crucial for processing as each token is then converted into a numerical form that the model can process."
+        },
+        {
+            "question": "What are embeddings in the context of ChatGPT?",
+            "options": [
+                "Encryption algorithms",
+                "Vector representations of tokens",
+                "Programs that predict text",
+                "Databases of words"
+            ],
+            "answers": [false, true, false, false],
+            "explanation": "Embeddings refer to vector representations of tokens generated during the processing of text. These vectors are dense numerical representations that capture semantic meanings of tokens, enabling the model to understand and generate language by processing these vectors."
+        },
+        {
+            "question": "What happens after embeddings are created in ChatGPT?",
+            "options": [
+                "They are deleted",
+                "They are stored permanently",
+                "They are multiplied by model weights",
+                "They are sent to the user"
+            ],
+            "answers": [false, false, true, false],
+            "explanation": "After embeddings are created, they interact with the model's weights. The embeddings are multiplied by weights in the model's neural network layers, a crucial step where the model uses learned parameters to process the input and generate outputs. This matrix multiplication is fundamental to producing the next token predictions."
+        },
+        {
+            "question": "What represents the outcome of the multiplication of embeddings by model weights?",
+            "options": [
+                "A prediction of the next token",
+                "An image",
+                "A sound file",
+                "A statistical model"
+            ],
+            "answers": [true, false, false, false],
+            "explanation": "The outcome of multiplying embeddings by model weights is the prediction of the next token. This step calculates the likelihood of each possible next token based on the current context and learned patterns, effectively guiding the generation of coherent and contextually appropriate text."
+        },
+        {
+            "question": "How does the model predict the next most likely token?",
+            "options": [
+                "By analyzing user feedback",
+                "Using a random number generator",
+                "Based on the result of the embeddings and weights multiplication",
+                "Through manual input by an operator"
+            ],
+            "answers": [false, false, true, false],
+            "explanation": "The prediction of the next most likely token is based on the outputs derived from the multiplication of embeddings and model weights. This calculation assesses the probability of various tokens being the appropriate next piece in the sequence, allowing the model to select the most likely candidate."
+        },
+        {
+            "question": "What does 'sampling a prediction' mean in the process of ChatGPT?",
+            "options": [
+                "Choosing the next most likely token",
+                "Selecting a random sample of data",
+                "Surveying users for input",
+                "Sending data to another AI for analysis"
+            ],
+            "answers": [true, false, false, false],
+            "explanation": "'Sampling a prediction' refers to the method by which ChatGPT selects the next token in its response. The model generates probabilities for each possible next token and then 'samples' one, typically the most probable, to continue the text. This process is iterative and continues until the completion of the message."
+        },
+        {
+            "question": "Why are embeddings crucial for ChatGPT?",
+            "options": [
+                "They encrypt data for security",
+                "They provide vector representations that capture semantic meanings",
+                "They convert text to speech",
+                "They speed up the processing of predictions"
+            ],
+            "answers": [false, true, false, false],
+            "explanation": "Embeddings are fundamental to ChatGPT as they provide dense vector representations of text tokens that encapsulate semantic meanings. These embeddings enable the model to process and understand the input text deeply, facilitating effective generation of human-like text responses."
+        }
+    ]
+}
