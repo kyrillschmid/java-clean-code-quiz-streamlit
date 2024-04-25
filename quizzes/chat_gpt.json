@@ -1,4 +1,4 @@
-{
+{ "info" : {"title": "ChatGPT", "description": "In this quiz, you will be asked questions about the inner workings of ChatGPT. Good luck!"},
     "quiz": [
         {
             "question": "What is the first step in the process when you ask ChatGPT a question?",
