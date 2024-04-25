@@ -27,3 +27,17 @@ def show_leaderboard():
         st.table(df)
     except FileNotFoundError:
         st.write("No scores available yet.")
+
+
+def reset_leaderboard():
+    import os
+    # Check if the file exists
+    if os.path.exists('leaderboard.csv'):
+        os.remove('leaderboard.csv')  # Remove the CSV file
+        # Optionally, recreate the file with headers if you don't want to check file existence when saving scores
+        df = pd.DataFrame(columns=['Name', 'Score'])
+        df.to_csv('leaderboard.csv', index=False)
+        return "Leaderboard reset successfully."
+    else:
+        return "Leaderboard file does not exist."
+

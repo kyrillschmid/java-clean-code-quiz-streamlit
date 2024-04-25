@@ -88,5 +88,9 @@
             "answers": [false, true, false, false],
             "explanation": "Embeddings are fundamental to ChatGPT as they provide dense vector representations of text tokens that encapsulate semantic meanings. These embeddings enable the model to process and understand the input text deeply, facilitating effective generation of human-like text responses."
         }
-    ]
+    ],
+    "references": [{
+        "url" : "https://blog.pragmaticengineer.com/how-does-chatgpt-work/?utm_source=tldrai",
+        "description" : "How Does ChatGPT Work?"
+    }]
 }
